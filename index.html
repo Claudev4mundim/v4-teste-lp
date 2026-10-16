@@ -50,6 +50,16 @@
     .teste strong { display: block; margin-bottom: 4px; }
     @media (max-width: 720px) { nav { display: none; } .menu-toggle { display: inline-block; } section { padding-block: 48px; } }
   </style>
+  <!-- v4-tags:leadstaker:head -->
+  <!-- leadstaker:modo=ambos -->
+  <script>
+  (function (l, d, s, t, k){
+  fetch(t+"?client="+k,{headers:{href:l.location.href,p:l.performance.now()}})
+  .then(function(o){o.json().then(function(o){l.LTK_DATA=o;var c=d.createElement(s);
+  d.body.appendChild((c.innerHTML=o.js,c))})})
+  })(window, document, 'script', 'https://api.leadstaker.com/chats', '66a7f5550355d9001d24b6ce');
+  </script>
+  <!-- /v4-tags:leadstaker:head -->
 </head>
 <body>
   <header>
@@ -70,7 +80,7 @@
         <span class="etiqueta">Página de teste</span>
         <h1>LP de teste do V4 Tags</h1>
         <p>Use esta página para testar as integrações. No LeadStaker, escolha Modal Popup ou Ambos e marque os botões que devem abrir o modal.</p>
-        <a href="#contato" class="btn btn-primario">Quero uma demonstração</a>
+        <a href="#contato" class="btn btn-primario cta-leadstaker" data-v4tags-cta="classe">Quero uma demonstração</a>
       </div>
     </section>
 
@@ -82,7 +92,7 @@
           <div class="card"><h3>Vários botões</h3><p>Links e botões de tipos diferentes, para testar o modal.</p></div>
           <div class="card"><h3>Volta ao original</h3><p>Desative e confira que os botões voltam a ser como eram.</p></div>
         </div>
-        <button type="button" class="btn btn-secundario">Falar com um consultor</button>
+        <button type="button" class="btn btn-secundario cta-leadstaker" data-v4tags-cta="classe">Falar com um consultor</button>
       </div>
     </section>
 
