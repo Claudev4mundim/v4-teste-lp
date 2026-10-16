@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LP de teste do V4 Tags | V4 Teste</title>
+  <meta name="description" content="Página de teste das integrações do V4 Tags.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://v4-teste.v4mundim.com/">
+  <style>
+    :root { --vermelho: #e50914; --texto: #16181d; --suave: #5b6170; --fundo: #f6f6f7; --borda: #e3e4e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--texto); background: #fff; line-height: 1.5; }
+    a { color: inherit; }
+    .container { width: min(1040px, 100% - 32px); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--borda); }
+    header .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+    .marca { font-weight: 800; font-size: 20px; text-decoration: none; }
+    .marca span { color: var(--vermelho); }
+    nav { display: flex; gap: 20px; }
+    .menu-link { text-decoration: none; color: var(--suave); font-size: 15px; }
+    .menu-link:hover { color: var(--texto); }
+    .menu-toggle { display: none; border: 1px solid var(--borda); background: #fff; border-radius: 8px; padding: 6px 12px; font: inherit; cursor: pointer; }
+    .btn, .cta { display: inline-block; border: 0; border-radius: 10px; padding: 14px 22px; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; transition: transform .15s, box-shadow .15s; }
+    .btn:hover, .cta:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgb(0 0 0 / .12); }
+    .btn-primario, .cta { background: var(--vermelho); color: #fff; }
+    .btn-secundario { background: var(--texto); color: #fff; }
+    .btn-whatsapp { background: #1fa855; color: #fff; }
+    section { padding-block: 64px; }
+    .hero { background: var(--fundo); }
+    .hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.1; margin: 0 0 16px; max-width: 14ch; }
+    .hero p { color: var(--suave); font-size: 18px; max-width: 52ch; margin: 0 0 28px; }
+    .etiqueta { display: inline-block; font-size: 13px; font-weight: 700; color: var(--vermelho); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 12px; }
+    h2 { font-size: clamp(26px, 3.5vw, 36px); margin: 0 0 24px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .card { border: 1px solid var(--borda); border-radius: 14px; padding: 22px; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0; color: var(--suave); }
+    .faixa { background: var(--texto); color: #fff; text-align: center; }
+    .faixa p { color: #c9ccd3; margin: 0 auto 24px; max-width: 48ch; }
+    form { display: grid; gap: 12px; max-width: 460px; }
+    label { font-weight: 600; font-size: 14px; }
+    input { width: 100%; padding: 12px 14px; border: 1px solid var(--borda); border-radius: 10px; font: inherit; }
+    .enviar { background: var(--texto); color: #fff; border: 0; border-radius: 10px; padding: 14px; font: inherit; font-weight: 700; cursor: pointer; }
+    footer { border-top: 1px solid var(--borda); padding-block: 24px; color: var(--suave); font-size: 14px; }
+    footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    /* Só para o teste: mostra quais botões estão com a classe do LeadStaker. */
+    .cta-leadstaker { outline: 3px dashed #1fa855; outline-offset: 4px; }
+    .teste { position: fixed; left: 16px; bottom: 16px; max-width: 280px; background: #fff; border: 1px solid var(--borda); border-radius: 12px; padding: 12px 14px; font-size: 13px; box-shadow: 0 8px 24px rgb(0 0 0 / .12); z-index: 10; }
+    .teste strong { display: block; margin-bottom: 4px; }
+    @media (max-width: 720px) { nav { display: none; } .menu-toggle { display: inline-block; } section { padding-block: 48px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="marca" href="/">V4 <span>Teste</span></a>
+      <nav aria-label="Seções">
+        <a class="menu-link" href="#beneficios">Benefícios</a>
+        <a class="menu-link" href="#planos">Planos</a>
+        <a class="menu-link" href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="etiqueta">Página de teste</span>
+        <h1>LP de teste do V4 Tags</h1>
+        <p>Use esta página para testar as integrações. No LeadStaker, escolha Modal Popup ou Ambos e marque os botões que devem abrir o modal.</p>
+        <a href="#contato" class="btn btn-primario">Quero uma demonstração</a>
+      </div>
+    </section>
+
+    <section id="beneficios">
+      <div class="container">
+        <h2>Por que testar aqui</h2>
+        <div class="cards">
+          <div class="card"><h3>Sem risco</h3><p>Nenhum cliente de verdade usa esta página.</p></div>
+          <div class="card"><h3>Vários botões</h3><p>Links e botões de tipos diferentes, para testar o modal.</p></div>
+          <div class="card"><h3>Volta ao original</h3><p>Desative e confira que os botões voltam a ser como eram.</p></div>
+        </div>
+        <button type="button" class="btn btn-secundario">Falar com um consultor</button>
+      </div>
+    </section>
+
+    <section id="planos" class="faixa">
+      <div class="container">
+        <h2>Prefere conversar agora?</h2>
+        <p>Botão de WhatsApp, para testar se o modal abre no lugar do link.</p>
+        <a href="https://wa.me/5511999999999" class="btn btn-whatsapp">Chamar no WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <h2>Fale com a gente</h2>
+        <form onsubmit="event.preventDefault(); alert('Formulário de teste: nada foi enviado.');">
+          <div><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name"></div>
+          <div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email"></div>
+          <button class="enviar" type="submit">Enviar</button>
+        </form>
+        <p style="margin-top:32px"><a href="#contato" class="cta">Garantir minha vaga</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>V4 Teste · página de teste do V4 Tags</span>
+      <a href="/privacidade">Política de privacidade</a>
+    </div>
+  </footer>
+
+  <div class="teste" aria-live="polite">
+    <strong>Painel de teste</strong>
+    <span id="teste-status">Carregando…</span>
+  </div>
+  <script>
+    // Mostra quantos botões estão com a classe do LeadStaker e se o script carregou.
+    function atualizar() {
+      var botoes = document.querySelectorAll(".cta-leadstaker").length;
+      var chat = document.querySelector(".ltk") ? "carregado" : "não carregado";
+      document.getElementById("teste-status").textContent =
+        "Botões com cta-leadstaker: " + botoes + " · LeadStaker: " + chat;
+    }
+    atualizar();
+    setInterval(atualizar, 2000);
+  </script>
+</body>
+</html>
